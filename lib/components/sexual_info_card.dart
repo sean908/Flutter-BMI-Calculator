@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'constants.dart';
+import '../constants.dart';
 
 class SexualInfoCard extends StatelessWidget {
   final Gender gender;
@@ -19,7 +19,7 @@ class SexualInfoCard extends StatelessWidget {
         Icon(
           gender == Gender.male ? FontAwesomeIcons.mars : FontAwesomeIcons.venus,
           size: 80.0,
-          color: isSelected ? activeIconColor : inactiveIconColor,
+          color: isSelected ? k0ActiveIconColor : k0InactiveIconColor,
         ),
         SizedBox(
           height: 15.0,
@@ -28,7 +28,7 @@ class SexualInfoCard extends StatelessWidget {
           gender == Gender.male ? 'MALE' : 'FEMALE',
           style: TextStyle(
             fontSize: 18.0,
-            color: isSelected ? activeIconColor : inactiveIconColor,
+            color: isSelected ? k0ActiveIconColor : k0InactiveIconColor,
           ),
         ),
       ],
