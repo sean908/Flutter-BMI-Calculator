@@ -2,11 +2,10 @@ import 'package:flutter/material.dart';
 import '../constants.dart';
 
 class BottomButton extends StatelessWidget {
-
   final VoidCallback? onPressed;
   final String? buttonTitle;
 
-  BottomButton({this.buttonTitle, this.onPressed});
+  const BottomButton({this.buttonTitle, this.onPressed});
 
   @override
   Widget build(BuildContext context) {
@@ -19,8 +18,10 @@ class BottomButton extends StatelessWidget {
         width: double.infinity,
         height: k0BottomContainerHeight,
         child: Center(
-          child: Text(buttonTitle!,
-              style: k0LargeButtonTextStyle),
+          child: Text(
+            buttonTitle!,
+            style: k0LargeButtonTextStyle,
+          ),
         ),
       ),
     );

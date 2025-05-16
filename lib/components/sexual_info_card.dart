@@ -6,7 +6,7 @@ class SexualInfoCard extends StatelessWidget {
   final Gender gender;
   final bool isSelected;
 
-  SexualInfoCard({
+  const SexualInfoCard({
     required this.gender,
     this.isSelected = false,
   });

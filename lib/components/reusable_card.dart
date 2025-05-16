@@ -6,7 +6,7 @@ class ReusableCard extends StatelessWidget {
   final Widget? cardChild;
   final Function()? onTap;
 
-  ReusableCard({
+  const ReusableCard({
     this.colour = k0ActiveCardColor,
     this.cardChild,
     this.onTap,
